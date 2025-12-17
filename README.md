@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NorthrupRobert/Exoplanet_Analysis/HEAD)
+
 #EXO-PLANET ANALYSIS
 Challenging means of exoplanet identification.
 
