@@ -1,12 +1,15 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NorthrupRobert/Exoplanet_Analysis/HEAD)
 
-#EXO-PLANET ANALYSIS
-Challenging means of exoplanet identification.
+# EXO-PLANET ANALYSIS
+Challenging means of exoplanet identification
 
 *Author:* Robb Northrup
 *Date:* December 15, 2025 - CURRENT
+*Links* 
+ - <github.com/NorthrupRobert/>
+ - <www.linkedin.com/in/robb-northrup-463867382>
 
-##QUESTION
+## QUESTION
 This project serves as an analysis of current methods being utilize to identify exoplanets within the visible universe
 
 1. Detection Bias & Star Type
@@ -59,3 +62,27 @@ According to the NASA Exoplanet Archive and other catalogs, the main criteria ar
         Microlensing.
 
         Each method has its own reliability thresholds before a candidate is confirmed.
+
+---
+
+## THE DATA
+NASA's Exoplanet Archive (courtesy of CalTech and NASA) "Planetary Systems" dataset was utilized to exam the features in question. Information was compiled by utilzing the TAP (Table Access Protocol) API, the prime standard as defined by the IVOA (International Virtual Observatory Alliance). TAP is standardized as to not be limited to NASA datasets, but instead utilized cross-organizationally
+
+---
+
+## METHODOLOGY
+
+
+---
+
+## DATA EXPLORATION
+
+
+---
+
+## RESULTS
+
+
+---
+
+## SOURCES
