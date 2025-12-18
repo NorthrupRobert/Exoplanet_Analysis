@@ -6,8 +6,8 @@ Challenging means of exoplanet identification
 *Author:* Robb Northrup
 *Date:* December 15, 2025 - CURRENT
 *Links* 
- - <github.com/NorthrupRobert/>
- - <www.linkedin.com/in/robb-northrup-463867382>
+ - [GitHub](www.github.com/NorthrupRobert/)
+ - [LinkedIn](www.linkedin.com/in/robb-northrup-463867382)
 
 ## QUESTION
 This project serves as an analysis of current methods being utilize to identify exoplanets within the visible universe
