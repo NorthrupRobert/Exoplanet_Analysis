@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NorthrupRobert/Exoplanet_Analysis/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NorthrupRobert/Exoplanet_Analysis/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2Fmain.ipynb)
 
 # EXO-PLANET ANALYSIS
 Challenging means of exoplanet identification
