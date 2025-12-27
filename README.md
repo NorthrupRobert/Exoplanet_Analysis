@@ -17,7 +17,9 @@ This project serves as an analysis of current methods being utilize to identify 
 
 	Why it stands out: Highlights how our tools shape what we “see” and what we might be missing.
 
-### Success Metric
+### Success Metrics
+- *Cleaning:* % Usable Dataset Adjustment
+- *Bias:*
 
 ### Signifigance
 Current exoplanet discoveries are affected heavily by our biases and limitations of our current means of detecting them. Particular types of stars, as a result of this, might appear to host planets much more than they actually do, seeing as these stars are easier to observe. The project here serves as an analysis of detection bias across star types to improve the accuracy of exoplanet occurance estimates and guide future observation expeditions.
@@ -71,7 +73,10 @@ According to the NASA Exoplanet Archive and other catalogs, the main criteria ar
         Each method has its own reliability thresholds before a candidate is confirmed.
 
 ### Methods of Exoplanet Detection
-
+1. Compile data from the following datasets:
+    - **Planetary System Composite Data** (NASA Exoplanet Archive) For analyzing detected exoplanets and their host stars
+    - **Kepler Stellar** (NASA Exoplanet Archive) Exploring all stellar bodies targeted by the Kepler Space Telescope
+    - **Gaia DR3** () Mass Dataset of all known stars in our observable universe.
 
 ---
 
