@@ -1,10 +1,12 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NorthrupRobert/Exoplanet_Analysis/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2Fmain.ipynb)
 
 # EXO-PLANET ANALYSIS
-Challenging means of exoplanet identification
+## *Challenging means of exoplanet identification*
 
 *Author:* Robb Northrup
+
 *Date:* December 15, 2025 - CURRENT
+
 *Links* 
  - [GitHub](https://www.github.com/NorthrupRobert/)
  - [LinkedIn](https://www.linkedin.com/in/robb-northrup-463867382)
