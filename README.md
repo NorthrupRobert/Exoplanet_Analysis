@@ -12,6 +12,9 @@
  - [LinkedIn](https://www.linkedin.com/in/robb-northrup-463867382)
 
 ## QUESTION
+### Business Problem
+Methods for exoplanet discovery currently are biased towards certain types of stars, which distor our understanding of where planets realy might exist. This project identifies what those biases are so we can better target future observations and improve the accuracy of planet occurrence estimates.
+
 ### Overview
 This project serves as an analysis of current methods being utilize to identify exoplanets within the visible universe in detection bias & star type:
 
