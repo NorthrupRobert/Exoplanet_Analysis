@@ -58,7 +58,15 @@ The first character of a star's classification (Harvard classification) is ultim
 
 The second character in this classification details the temperature of the star on a scale from 0-9 with respect to other stars within the same Harvard Classification.
 
-Finally, the last character (or set of characters) identify the luminosity class of the star
+Finally, the last character (or set of characters) identify the luminosity class of the star, which is based on the absorbtion lines of the given star... sharper more defined features in this spectra (typically of large, low-surface gravity stars) are high lumonocity bodies, whereas broader absorbtion lines are indicative of a lower lumonocity class. The lumonocity class is defined as follows:
+- **CLASS, PHYSICAL MEANING**
+- I, Supergiants
+- II, Bright Giants
+- III, Giants
+- IV, Subgiants
+- V, Main Sequence (Dwarfs)
+- VI, Subdwarfs
+- VII, White Dwarfs
 
 A few example classifications are as follows:
 - **G2V** A main sequence G-star that is closer in temperature to the F spectrum as opposed to the K (This is the Sun's classification!)
