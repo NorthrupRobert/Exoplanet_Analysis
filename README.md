@@ -61,14 +61,14 @@ The first character of a star's classification (Harvard classification) is ultim
 The second character in this classification details the temperature of the star on a scale from 0-9 with respect to other stars within the same Harvard Classification.
 
 Finally, the last character (or set of characters) identify the luminosity class of the star, which is based on the absorbtion lines of the given star... sharper more defined features in this spectra (typically of large, low-surface gravity stars) are high lumonocity bodies, whereas broader absorbtion lines are indicative of a lower lumonocity class. The lumonocity class is defined as follows:
-- **CLASS, PHYSICAL MEANING**
-- I, Supergiants
-- II, Bright Giants
-- III, Giants
-- IV, Subgiants
-- V, Main Sequence (Dwarfs)
-- VI, Subdwarfs
-- VII, White Dwarfs
+| CLASS | PHYSICAL MEANING |
+| I | Supergiants |
+| II | Bright Giants |
+| III | Giants |
+| IV | Subgiants |
+| V | Main Sequence (Dwarfs) |
+| VI | Subdwarfs |
+| VII | White Dwarfs |
 
 A few example classifications are as follows:
 - **G2V** A main sequence G-star that is closer in temperature to the F spectrum as opposed to the K (This is the Sun's classification!)
@@ -105,7 +105,13 @@ Following the Morgan-Keenan system, the distribution of stars are as follows:
 
 Each method has its own reliability thresholds before a candidate is confirmed.
 Exoplanet
-### Methods of  Detection
+
+### Other Important Background Knowledge
+ - **Paralax:** Measure of how close are far away a given star is. The Gaia dataset measures the incredibly tiny wobbles of stars in the sky (as Earth orbit around the sun), and measures the angles of the wobble. This is parallax, which is measured in milliarcseconds.
+    - Large parallax -> close star
+    - Small parallax -> far star
+
+### Analysis
 1. Compile data from the following datasets:
     - **Planetary System Composite Data** (NASA Exoplanet Archive) For analyzing detected exoplanets and their host stars
     - **Kepler Stellar** (NASA Exoplanet Archive) Exploring all stellar bodies targeted by the Kepler Space Telescope
@@ -114,7 +120,7 @@ Exoplanet
 ---
 
 ## THE DATA
-NASA's Exoplanet Archive (courtesy of CalTech and NASA) "Planetary Systems" dataset was utilized to exam the features in question. Information was compiled by utilzing the TAP (Table Access Protocol) API, the prime standard as defined by the IVOA (International Virtual Observatory Alliance). TAP is standardized as to not be limited to NASA datasets, but instead utilized cross-organizationally
+NASA's Exoplanet Archive (courtesy of CalTech and NASA) "Planetary Systems" dataset was utilized to examen the features in question. Information was compiled by utilzing the TAP (Table Access Protocol) API, the prime standard as defined by the IVOA (International Virtual Observatory Alliance). TAP is standardized as to not be limited to NASA datasets, but instead utilized cross-organizationally
 
 ---
 
@@ -138,7 +144,7 @@ Wikipedia (https://en.wikipedia.org/wiki/Stellar_classification): "Harvard astro
 
 ## Room for Improvement
 
-### Questions that I can Address in the Future
+### Questions that I would like to Address in the Future
 
 1. The Goldilocks Dilemna
 	Europa (one of the Galilean moons of Jupiter) is a clear example of a breeding ground for life beyond Earth that challenges the notion of the goldilocks zone being the only habitable area from which habitable exoplanets can be reasonably identified. This moon challenges that notion, and could alter how we choose to identify habitable exoplanets and exomoons forever. If we adjusted habitable exoplanet analysis for undersurface seas for interstellar object outside the goldilocks zone?
