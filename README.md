@@ -11,6 +11,10 @@
  - [GitHub](https://www.github.com/NorthrupRobert/)
  - [LinkedIn](https://www.linkedin.com/in/robb-northrup-463867382)
 
+## ABSTRACT
+
+
+---
 
 ## QUESTION
 ### Analysis Problem
@@ -125,6 +129,7 @@ NASA's Exoplanet Archive (courtesy of CalTech and NASA) "Planetary Systems" data
 ---
 
 ## METHODOLOGY
+### High Level Workflow
 ### Harvard Star Classification based on Star Effective Temperature for Handling Unknown Spectral Types
 Wikipedia (https://en.wikipedia.org/wiki/Stellar_classification): "Harvard astronomer Cecilia Payne then demonstrated that the O-B-A-F-G-K-M spectral sequence is actually a sequence in temperature.[19] Because the classification sequence predates our understanding that it is a temperature sequence, the placement of a spectrum into a given subtype, such as B3 or A7, depends upon (largely subjective) estimates of the strengths of absorption features in stellar spectra. As a result, these subtypes are not evenly divided into any sort of mathematically representable intervals."
 
