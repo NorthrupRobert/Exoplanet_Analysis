@@ -32,10 +32,35 @@ def basic_exploration(my_df, name):
     for col in my_df:
         print(my_df[col].value_counts())
 
+# =================================================
+# | Author: Robb Northrup
+# | Function set for defining spectral type for stars
+# =================================================
+
+# Wrapper function called by notebooks
+def define_spectype(row):
+    # ----- Class -----
+    s_class = define_spectype_class_from_teff(row)
+
+    # FIXED: check s_class, not row['st_spectype']
+    if s_class == "UNKNOWN":
+        s_class = define_spectype_class_from_cmd(row)
+
+    if s_class == "UNKNOWN":
+        return "UNKNOWN"
+
+    # ----- Subclass -----
+    s_subclass = define_spectype_subclass(row, s_class)
+
+    # ----- Luminosity Class -----
+    s_lumclass = define_spectype_lum(row)
+
+    return f"{s_class}{s_subclass}{s_lumclass}"
+
 
 # Classify stars by temperature for available TEFF data
 # Needs to be adjusted to account for magnitude as well
-def spectype_from_teff(row):
+def define_spectype_class_from_teff(row):
     # spectype already . . .
     if not pd.isnull(row["st_spectype"]):
         return row["st_spectype"][0]
@@ -57,3 +82,60 @@ def spectype_from_teff(row):
     # if no temp value and no spectype . . . 
     else:
         return "UNKNOWN"
+    
+
+def define_spectype_class_from_cmd(row):
+    color = row["bp_rp"]
+    M = row["abs_mag"]
+
+    if pd.isnull(color) or pd.isnull(M):
+        return "UNKNOWN"
+
+    # Very hot, blue stars
+    if color < 0.0: return "O"
+    if 0.0 <= color < 0.3: return "B"
+    if 0.3 <= color < 0.6: return "A"
+    if 0.6 <= color < 0.9: return "F"
+    if 0.9 <= color < 1.3: return "G"
+    if 1.3 <= color < 1.8: return "K"
+    if color >= 1.8: return "M"
+
+    return "UNKNOWN"
+
+
+def define_spectype_subclass(row, s_class):
+    T = row["st_teff"]
+
+    if pd.isnull(T):
+        return "_"
+
+    ranges = {
+        "O": (30000, 50000),
+        "B": (10000, 30000),
+        "A": (7500, 10000),
+        "F": (6000, 7500),
+        "G": (5200, 6000),
+        "K": (3700, 5200),
+        "M": (2400, 3700)
+    }
+
+    Tmin, Tmax = ranges[s_class]
+
+    # Normalize Teff into subclass 0–9
+    subclass = int(10 * (Tmax - T) / (Tmax - Tmin))
+    return max(0, min(9, subclass))
+
+
+def define_spectype_lum(row):
+    M = row['abs_mag']
+
+    if M < -2:
+        return "I"   # supergiant
+    elif -2 <= M < 0:
+        return "II"  # bright giant
+    elif 0 <= M < 2:
+        return "III" # giant
+    elif 2 <= M < 4:
+        return "IV"  # subgiant
+    else:
+        return "V"   # dwarf

@@ -90,7 +90,7 @@ Following the Morgan-Keenan system, the distribution of stars are as follows:
     - K 12%
     - M 76%
 - Stars that do not fit this sequence:
-    - W
+    - W 
     - S
     - C
 - Stellar Remenants
