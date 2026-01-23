@@ -16,7 +16,17 @@
 
 ---
 
-## QUESTION
+## KEY FINDINGS
+(High level results)
+
+---
+
+## RECOMMENDED ACTIONS
+
+
+---
+
+## PROBLEM STATEMENT
 ### Analysis Problem
 Exoplanet discoveries are heavily influenced by the limitaiton and biases imposed by our detection methods. As a result, certain star types appear to host far more planets due to the simplicity of viewing these star types, not necessarily because they actually have more planets. This project aims to nalyze detection bias across star types to help improve the accuracy of exoplanet occurrence estimates and guid future observational strategies.
 
@@ -140,12 +150,15 @@ Wikipedia (https://en.wikipedia.org/wiki/Stellar_classification): "Harvard astro
 
 ---
 
-## RESULTS
+## DETAILED RESULTS
 
 
 ---
 
-## TAKING THIS PROJECT FURTHER
+## FUTURE WORK
+
+
+---
 
 ## Room for Improvement
 
