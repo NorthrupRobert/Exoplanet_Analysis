@@ -139,3 +139,11 @@ def define_spectype_lum(row):
         return "IV"  # subgiant
     else:
         return "V"   # dwarf
+    
+
+
+def calc_distance_pc(row):
+    parallax_arc_seconds = row['parallax'] / 1000 # remember, parallax stored as milli-arcseconds
+    distance_pc = 1 / parallax_arc_seconds
+
+    return distance_pc
