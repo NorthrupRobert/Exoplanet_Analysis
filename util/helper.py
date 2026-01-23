@@ -1,3 +1,5 @@
+import pandas as pd
+
 def basic_exploration(my_df, name):
     print('=====================================')
     print(name)
@@ -61,27 +63,25 @@ def define_spectype(row):
 # Classify stars by temperature for available TEFF data
 # Needs to be adjusted to account for magnitude as well
 def define_spectype_class_from_teff(row):
-    # spectype already . . .
-    if not pd.isnull(row["st_spectype"]):
-        return row["st_spectype"][0]
-    # else, assign based on temperatures. . .
-    elif pd.isnull(row["st_spectype"]) and row['st_teff'] > 30000:
-        return "O"
-    elif pd.isnull(row["st_spectype"]) and 10000 < row['st_teff'] <= 30000:
-        return "B"
-    elif pd.isnull(row["st_spectype"]) and 7500 < row['st_teff'] <= 10000:
-        return "A"
-    elif pd.isnull(row["st_spectype"]) and 6000 < row['st_teff'] <= 7500:
-        return "F"
-    elif pd.isnull(row["st_spectype"]) and 5200 < row['st_teff'] <= 6000:
-        return "G"
-    elif pd.isnull(row["st_spectype"]) and 3700 < row['st_teff'] <= 5200:
-        return "K"
-    elif pd.isnull(row["st_spectype"]) and row['st_teff'] <= 3700:
-        return "M"
-    # if no temp value and no spectype . . . 
-    else:
+    # no teff value?
+    if pd.isnull(row['st_teff']):
         return "UNKNOWN"
+    
+    # else, assign based on temperatures. . .
+    elif row['st_teff'] > 30000:
+        return "O"
+    elif 10000 < row['st_teff'] <= 30000:
+        return "B"
+    elif 7500 < row['st_teff'] <= 10000:
+        return "A"
+    elif 6000 < row['st_teff'] <= 7500:
+        return "F"
+    elif 5200 < row['st_teff'] <= 6000:
+        return "G"
+    elif 3700 < row['st_teff'] <= 5200:
+        return "K"
+    elif row['st_teff'] <= 3700:
+        return "M"
     
 
 def define_spectype_class_from_cmd(row):
