@@ -147,3 +147,17 @@ def calc_distance_pc(row):
     distance_pc = 1 / parallax_arc_seconds
 
     return distance_pc
+
+
+
+def calc_class_confidence_flag(row):
+    # high confidence -> from teff and good parallax
+    if not pd.isnull(row['st_teff']) and row['parallax_over_error'] > 10:
+        return 'high'
+
+    # medium confidence -> from CMD/teff and good parallax
+    elif row['parallax_over_error'] > 10:
+        return 'med'
+
+    # low confidence -> badish-parallax
+    return 'low'

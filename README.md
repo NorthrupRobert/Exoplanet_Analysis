@@ -11,6 +11,19 @@
  - [GitHub](https://www.github.com/NorthrupRobert/)
  - [LinkedIn](https://www.linkedin.com/in/robb-northrup-463867382)
 
+ ## TABLE OF CONTENTS
+- [Abstract](#abstract)
+- [Key_Findings](#key-findings)
+- [Recommended_Actions](#recommended-actions)
+- [Problem_Statement](#problem-statement)
+- [Background](#background)
+- [Data](#the-data)
+- [Methodology](#methodology)
+- [Data_Exploration](#data-exploration)
+- [Detailed_Results](#detailed-results)
+- [Future_Work](#future-work)
+- [Sources](#sources)
+
 ## ABSTRACT
 
 
