@@ -1,15 +1,32 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NorthrupRobert/Exoplanet_Analysis/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2Fmain.ipynb)
 
 # EXO-PLANET ANALYSIS
-## *Analyzing means of exoplanet identification*
+### *Analyzing means of exoplanet identification*
 
-*Author:* Robb Northrup
+> **A data‑driven analysis of star classification, exoplanet identification, and biases in methods and instruments employed to identify these objects.**
 
-*Date:* December 15, 2025 - CURRENT
+---
 
-*Links* 
+## PROJECT BADGES
+![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
+![Analytics: Python](https://img.shields.io/badge/Analytics-Python-blue)
+![Focus: Astrodata](https://img.shields.io/badge/Focus-Astrodata-purple)
+![Last Updated](https://img.shields.io/badge/Updated-Jan%202026-lightgrey)
+
+---
+
+## AUTHOR
+**Robb Northrup**
+
+Data Analytics | Aerospace | Community Impact
+
+**Date** Dec 15, 2025 - Present
+
+**Links**
  - [GitHub](https://www.github.com/NorthrupRobert/)
  - [LinkedIn](https://www.linkedin.com/in/robb-northrup-463867382)
+
+---
 
  ## TABLE OF CONTENTS
 - [Abstract](#abstract)
